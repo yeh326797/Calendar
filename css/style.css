@@ -1,0 +1,65 @@
+body {
+  background-color: #E6E6F2;
+  width: 100%;
+}
+
+.week {
+  background-color: #ffffff;
+  width: 500px;
+  height: 120px;
+  border-radius: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 300px;
+  padding: 20px;
+  vertical-align: middle;
+  position: relative;
+  font-family: "microsoft JhengHei";
+  box-shadow: -4px 6px 12px rgba(138, 138, 241, 0.3);
+}
+.week .day {
+  display: inline-block;
+  text-align: center;
+  width: calc(100%/7.5);
+  padding-top: 15px;
+  cursor: pointer;
+}
+.week .day .weekday {
+  color: #ADADAD;
+  font-size: 20px;
+}
+.week .day .number {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 25px;
+  font-family: monospace;
+}
+.week .day .number.number1 {
+  color: #4A4AFF;
+}
+.week .day .number.number2 {
+  color: #ADADAD;
+}
+.week .day .circle {
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+  position: absolute;
+  background-color: #FF9900;
+  bottom: 75px;
+}
+.week .day .circle.circle1 {
+  left: 135px;
+}
+.week .day .circle.circle2 {
+  left: 350px;
+}
+.week .day:hover {
+  background-color: #4A4AFF;
+  height: 150px;
+  border-radius: 20px;
+  box-shadow: 4px 4px 12px 4px rgba(138, 138, 241, 0.3);
+}
+.week .day:hover .weekday, .week .day:hover .number {
+  color: #ffffff;
+}
